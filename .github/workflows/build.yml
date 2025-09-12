@@ -46,7 +46,7 @@ jobs:
         export CROSS_COMPILE_ARM32=arm-none-linux-gnueabi-
 
         # substitua "defconfig" pelo defconfig do S23 FE Exynos 2200
-        make </arch/arm64/configs/s5e9925-r11sxxx_defconfig> -j$(nproc)
+        make s5e9925-r11sxxx_defconfig -j$(nproc)
         make -j$(nproc)
 
     - name: Upload artifacts
